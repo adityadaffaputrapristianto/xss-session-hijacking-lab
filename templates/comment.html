@@ -1,0 +1,12 @@
+<h2>Comment Page</h2>
+
+<form method="POST">
+<input name="comment" placeholder="write comment">
+<button type="submit">Send</button>
+</form>
+
+<h3>Comments:</h3>
+
+{% for c in comments %}
+<p>{{c|safe}}</p>
+{% endfor %}
